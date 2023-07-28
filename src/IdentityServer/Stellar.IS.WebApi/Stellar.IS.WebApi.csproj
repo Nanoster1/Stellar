@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <IncludeOpenAPIAnalyzers>true</IncludeOpenAPIAnalyzers>
+    <UserSecretsId>bf05dcea-6a2c-45e3-b3ee-82a7824f6973</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="Configuration/Files/appsettings.yaml">
+      <Link>%(RecursiveDir)%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.5" />
+    <PackageReference Include="Duende.IdentityServer" Version="6.3.2" />
+    <PackageReference Include="Hellang.Middleware.ProblemDetails" Version="6.5.1" />
+    <PackageReference Include="IdentityModel.AspNetCore.OAuth2Introspection" Version="6.2.0" />
+    <PackageReference Include="NetEscapades.Configuration.Yaml" Version="3.1.0" />
+    <PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stellar.IS.Contracts\Stellar.IS.Contracts.csproj" />
+    <ProjectReference Include="..\Stellar.IS.Application\Stellar.IS.Application.csproj" />
+    <ProjectReference Include="..\Stellar.IS.Infrastructure\Stellar.IS.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

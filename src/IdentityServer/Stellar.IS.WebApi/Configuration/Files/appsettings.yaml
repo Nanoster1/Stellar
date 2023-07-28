@@ -1,0 +1,12 @@
+Urls: "http://localhost:5000"
+Serilog:
+  MinimumLevel: "Information"
+  Enrich: ["FromLogContext"]
+  WriteTo:
+    - Name: "Console"
+    - Name: "File"
+      Args:
+        path: "logs/log.txt"
+        fileSizeLimitBytes: 10000000
+ConnectionStrings:
+  StellarDb: "Data Source=stellar_db;Mode=CreateReadWrite;Foreign Keys=True"

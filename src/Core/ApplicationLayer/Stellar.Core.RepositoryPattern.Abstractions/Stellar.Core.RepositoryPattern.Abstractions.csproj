@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <ProjectReference Include="..\..\DomainLayer\Stellar.Core.DomainLayer.Abstractions\Stellar.Core.DomainLayer.Abstractions.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NSpecifications.NETStandard" Version="1.4.1" />
+  </ItemGroup>
+</Project>

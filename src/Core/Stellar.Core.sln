@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationLayer", "ApplicationLayer", "{C4DD6102-75DC-4AF3-8C0C-06E1B984ED05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stellar.Core.ApplicationLayer.FluentValidation", "ApplicationLayer\Stellar.Core.FluentValidation\Stellar.Core.ApplicationLayer.FluentValidation.csproj", "{8404D485-3F8B-4B78-8A7C-8B168187B7F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stellar.Core.ApplicationLayer.MediatR", "ApplicationLayer\Stellar.Core.MediatR\Stellar.Core.ApplicationLayer.MediatR.csproj", "{B79C30A1-534B-47AC-ACA8-BA5A69E61476}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stellar.Core.RepositoryPattern.Abstractions", "ApplicationLayer\Stellar.Core.RepositoryPattern.Abstractions\Stellar.Core.RepositoryPattern.Abstractions.csproj", "{7551E9FF-F68F-42A3-A0C2-451A8D675740}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DomainLayer", "DomainLayer", "{A44248AD-70DD-4726-90AE-16A457DEF48E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stellar.Core.DomainLayer", "DomainLayer\Stellar.Core.DomainLayer\Stellar.Core.DomainLayer.csproj", "{3DC7B61B-60D3-4A34-9885-7C62174F299B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stellar.Core.DomainLayer.Abstractions", "DomainLayer\Stellar.Core.DomainLayer.Abstractions\Stellar.Core.DomainLayer.Abstractions.csproj", "{84B0B0BD-DFA9-46A4-BA02-4B1538C71E59}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "InfrastructureLayer", "InfrastructureLayer", "{18762904-196D-4E20-8215-BA9A41886279}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkCore", "EntityFrameworkCore", "{484458C1-F6AC-4432-A176-C7BC6D154990}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stellar.Core.DomainLayer.EntityFrameworkCore", "InfrastructureLayer\EntityFrameworkCore\Stellar.Core.DomainLayer.EntityFrameworkCore\Stellar.Core.DomainLayer.EntityFrameworkCore.csproj", "{791FD26A-8F44-42EB-A55D-E909245FBA93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8404D485-3F8B-4B78-8A7C-8B168187B7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8404D485-3F8B-4B78-8A7C-8B168187B7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8404D485-3F8B-4B78-8A7C-8B168187B7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8404D485-3F8B-4B78-8A7C-8B168187B7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B79C30A1-534B-47AC-ACA8-BA5A69E61476}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B79C30A1-534B-47AC-ACA8-BA5A69E61476}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B79C30A1-534B-47AC-ACA8-BA5A69E61476}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B79C30A1-534B-47AC-ACA8-BA5A69E61476}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7551E9FF-F68F-42A3-A0C2-451A8D675740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7551E9FF-F68F-42A3-A0C2-451A8D675740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7551E9FF-F68F-42A3-A0C2-451A8D675740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7551E9FF-F68F-42A3-A0C2-451A8D675740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DC7B61B-60D3-4A34-9885-7C62174F299B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DC7B61B-60D3-4A34-9885-7C62174F299B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DC7B61B-60D3-4A34-9885-7C62174F299B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DC7B61B-60D3-4A34-9885-7C62174F299B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84B0B0BD-DFA9-46A4-BA02-4B1538C71E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84B0B0BD-DFA9-46A4-BA02-4B1538C71E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84B0B0BD-DFA9-46A4-BA02-4B1538C71E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84B0B0BD-DFA9-46A4-BA02-4B1538C71E59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{791FD26A-8F44-42EB-A55D-E909245FBA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{791FD26A-8F44-42EB-A55D-E909245FBA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{791FD26A-8F44-42EB-A55D-E909245FBA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{791FD26A-8F44-42EB-A55D-E909245FBA93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8404D485-3F8B-4B78-8A7C-8B168187B7F6} = {C4DD6102-75DC-4AF3-8C0C-06E1B984ED05}
+		{B79C30A1-534B-47AC-ACA8-BA5A69E61476} = {C4DD6102-75DC-4AF3-8C0C-06E1B984ED05}
+		{7551E9FF-F68F-42A3-A0C2-451A8D675740} = {C4DD6102-75DC-4AF3-8C0C-06E1B984ED05}
+		{3DC7B61B-60D3-4A34-9885-7C62174F299B} = {A44248AD-70DD-4726-90AE-16A457DEF48E}
+		{84B0B0BD-DFA9-46A4-BA02-4B1538C71E59} = {A44248AD-70DD-4726-90AE-16A457DEF48E}
+		{484458C1-F6AC-4432-A176-C7BC6D154990} = {18762904-196D-4E20-8215-BA9A41886279}
+		{791FD26A-8F44-42EB-A55D-E909245FBA93} = {484458C1-F6AC-4432-A176-C7BC6D154990}
+	EndGlobalSection
+EndGlobal

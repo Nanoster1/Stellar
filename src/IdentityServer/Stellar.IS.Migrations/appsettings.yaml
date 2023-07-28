@@ -1,0 +1,2 @@
+ConnectionStrings:
+  StellarDb: "Data Source=../Stellar.IS.WebApi/stellar_db;Mode=ReadWriteCreate;Foreign Keys=True"
