@@ -3,9 +3,11 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
+import Vuetify from '@/plugins/vuetify';
+import 'vuetify/styles';
 
 const app = createApp(App)
 
 app.use(router)
 
-app.mount('#app')
+app.use(Vuetify).mount('#app')
