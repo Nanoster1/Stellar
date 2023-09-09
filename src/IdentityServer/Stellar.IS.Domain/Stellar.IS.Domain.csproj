@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\DomainLayer\Stellar.Core.DomainLayer\Stellar.Core.DomainLayer.csproj" />
-    <ProjectReference Include="..\..\Core\DomainLayer\Stellar.Core.DomainLayer.Utils\Stellar.Core.DomainLayer.Utils.csproj" />
+    <ProjectReference
+      Include="..\..\Core\DomainLayer\Stellar.Core.DomainLayer\Stellar.Core.DomainLayer.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Ardalis.SmartEnum" Version="7.0.0" />

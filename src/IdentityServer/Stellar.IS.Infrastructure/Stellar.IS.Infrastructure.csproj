@@ -4,13 +4,16 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Stellar.IS.Application\Stellar.IS.Application.csproj" />
-    <ProjectReference Include="..\..\Core\InfrastructureLayer\EntityFrameworkCore\Stellar.Core.DomainLayer.EntityFrameworkCore\Stellar.Core.DomainLayer.EntityFrameworkCore.csproj" />
-    <ProjectReference Include="..\..\Core\InfrastructureLayer\EntityFrameworkCore\Stellar.Core.RepositoryPattern.EntityFrameworkCore\Stellar.Core.RepositoryPattern.EntityFrameworkCore.csproj" />
+    <ProjectReference
+      Include="..\..\Core\InfrastructureLayer\EntityFrameworkCore\Stellar.Core.DomainLayer.EntityFrameworkCore\Stellar.Core.DomainLayer.EntityFrameworkCore.csproj" />
+    <ProjectReference
+      Include="..\..\Core\InfrastructureLayer\EntityFrameworkCore\Stellar.Core.RepositoryPattern.EntityFrameworkCore\Stellar.Core.RepositoryPattern.EntityFrameworkCore.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Ardalis.SmartEnum.EFCore" Version="7.0.0" />
     <PackageReference Include="EFCore.NamingConventions" Version="7.0.2" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.8" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+      Version="7.0.0" />
   </ItemGroup>
 </Project>

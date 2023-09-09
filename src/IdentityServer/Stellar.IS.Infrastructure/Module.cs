@@ -10,7 +10,7 @@ namespace Stellar.IS.Infrastructure;
 
 public static class Module
 {
-    public static IServiceCollection AddStellarInfrastructure(
+    public static IServiceCollection AddStellarISInfrastructure(
         this IServiceCollection services,
         IConfiguration configuration)
     {

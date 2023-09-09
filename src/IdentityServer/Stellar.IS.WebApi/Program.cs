@@ -1,9 +1,12 @@
+using Duende.IdentityServer.Models;
+
 using Hellang.Middleware.ProblemDetails;
+
+using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 
 using Stellar.IS.Application;
 using Stellar.IS.Contracts.Routes.WebApi;
 using Stellar.IS.Infrastructure;
-using Stellar.IS.WebApi.Authentication;
 using Stellar.IS.WebApi.Configuration;
 using Stellar.IS.WebApi.Environment;
 using Stellar.IS.WebApi.HealthChecking;
@@ -24,11 +27,11 @@ var logging = builder.Logging
 
 var services = builder.Services;
 {
-    services.AddStellarApplication();
-    services.AddStellarInfrastructure(configuration);
+    services.AddStellarISApplication();
+    services.AddStellarISInfrastructure(configuration);
     services.AddStellarIdentityServer();
     services.AddStellarISProblemDetails();
-    services.AddStellarAuthentication();
+    services.AddLocalApiAuthentication();
     services.AddHealthChecks();
     services.AddControllers();
     services.AddSwaggerGen();
@@ -44,13 +47,19 @@ var app = builder.Build();
     }
 
     app.UseProblemDetails();
+
     app.UseExceptionHandler(WebApiRoutes.Controllers.ErrorController);
+
     app.UseStaticFiles();
+
     app.UseRouting();
+
     app.UseStellarISHealthChecks();
     app.UseStellarIdentityServer();
+
     app.UseAuthentication();
     app.UseAuthorization();
+
     app.MapControllers();
 }
 

@@ -1,22 +1,20 @@
 using Duende.IdentityServer.Models;
 
-using Microsoft.IdentityModel.Tokens;
-
 namespace Stellar.IS.WebApi.IdentityServer.Resources;
 
 public static partial class StellarResources
 {
-    public static ApiResource[] ApiResources => new ApiResource[]
+    public static ApiResource[] ApiResources => new[]
     {
         new ApiResource()
         {
-            Name = "TestApi",
-            DisplayName = "Test Api",
-            Description = "Test Api",
+            Name = "StellarApi",
+            DisplayName = "Stellar main api",
+            Description = "Stellar main api",
             Enabled = true,
-            Scopes = new[] { "TestScope" },
-            ApiSecrets = new[] { new Secret("TestSecret".Sha256()) },
-            UserClaims = new[] { "asd" }
+            Scopes = { "StellarApi.MainScope" },
+            ApiSecrets = new[] { new Secret("StellarApiSecret".Sha256()) },
+            UserClaims = Array.Empty<string>()
         }
     };
 }

@@ -1,13 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <ProjectReference Include="..\..\Core\ApplicationLayer\Stellar.Core.FluentValidation\Stellar.Core.ApplicationLayer.FluentValidation.csproj" />
-    <ProjectReference Include="..\..\Core\ApplicationLayer\Stellar.Core.MediatR\Stellar.Core.ApplicationLayer.MediatR.csproj" />
-    <ProjectReference Include="..\..\Core\ApplicationLayer\Stellar.Core.RepositoryPattern.Abstractions\Stellar.Core.RepositoryPattern.Abstractions.csproj" />
+    <ProjectReference
+      Include="..\..\Core\ApplicationLayer\Stellar.Core.FluentValidation\Stellar.Core.ApplicationLayer.FluentValidation.csproj" />
+    <ProjectReference
+      Include="..\..\Core\ApplicationLayer\Stellar.Core.MediatR\Stellar.Core.ApplicationLayer.MediatR.csproj" />
+    <ProjectReference
+      Include="..\..\Core\ApplicationLayer\Stellar.Core.RepositoryPattern.Abstractions\Stellar.Core.RepositoryPattern.Abstractions.csproj" />
     <ProjectReference Include="..\Stellar.IS.Domain\Stellar.IS.Domain.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.5.2" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions"
+      Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.1" />
     <PackageReference Include="NSpecifications" Version="1.1.0" />
   </ItemGroup>

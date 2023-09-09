@@ -6,6 +6,6 @@ public static partial class StellarResources
 {
     public static ApiScope[] ApiScopes => new ApiScope[]
     {
-        new ApiScope("TestScope", "Stellar Platform")
+        new ApiScope("StellarApi.MainScope", "Stellar Platform")
     };
 }
